@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1810542826D58698004A77F1 /* VocabularyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810542726D58698004A77F1 /* VocabularyChartView.swift */; };
+		1810542A26D589EA004A77F1 /* WhatDidYouDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810542926D589EA004A77F1 /* WhatDidYouDoView.swift */; };
+		18115B0026C70D14008899FA /* CalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18115AFF26C70D14008899FA /* CalenderViewModel.swift */; };
+		18115B0326C7473C008899FA /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18115B0226C7473C008899FA /* StatsView.swift */; };
+		1836910D26CC1CF900D99FF7 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1836910C26CC1CF900D99FF7 /* SwiftUICharts */; };
+		186E1A8B26E3FAA2003E041D /* WordCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E1A8A26E3FAA2003E041D /* WordCardViewModel.swift */; };
+		1879954F26C156A500689B29 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879954E26C156A500689B29 /* CustomTabView.swift */; };
+		187F345E26DFD6B6009D57FD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F345D26DFD6B6009D57FD /* SignIn.swift */; };
+		188061A426DD6572008BA7AC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 188061A326DD6572008BA7AC /* FirebaseAnalytics */; };
+		188061A626DD6572008BA7AC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 188061A526DD6572008BA7AC /* FirebaseStorage */; };
+		188061A826DD6572008BA7AC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 188061A726DD6572008BA7AC /* FirebaseAuth */; };
+		188061AA26DD6572008BA7AC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 188061A926DD6572008BA7AC /* FirebaseFirestore */; };
+		188061AC26DD66AE008BA7AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188061AB26DD66AE008BA7AC /* GoogleService-Info.plist */; };
+		188797AD26D558DC00651870 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188797AC26D558DC00651870 /* PieChart.swift */; };
+		188797B026D55EAC00651870 /* iLineChart in Frameworks */ = {isa = PBXBuildFile; productRef = 188797AF26D55EAC00651870 /* iLineChart */; };
+		189E851726C3EF3F002FFB62 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E851626C3EF3F002FFB62 /* CustomTextField.swift */; };
+		189E851926C40842002FFB62 /* AskDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E851826C40842002FFB62 /* AskDeleteView.swift */; };
+		18BB7D5426BD167500B63607 /* RyugakuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D5326BD167500B63607 /* RyugakuApp.swift */; };
+		18BB7D5626BD167500B63607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D5526BD167500B63607 /* ContentView.swift */; };
+		18BB7D5826BD167600B63607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BB7D5726BD167600B63607 /* Assets.xcassets */; };
+		18BB7D5B26BD167600B63607 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BB7D5A26BD167600B63607 /* Preview Assets.xcassets */; };
+		18BB7D6626BD167600B63607 /* RyugakuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D6526BD167600B63607 /* RyugakuTests.swift */; };
+		18BB7D7126BD167600B63607 /* RyugakuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D7026BD167600B63607 /* RyugakuUITests.swift */; };
+		18BB7D8026BD16D200B63607 /* WordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D7F26BD16D200B63607 /* WordCard.swift */; };
+		18BB7D8326BD16F700B63607 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D8226BD16F700B63607 /* Word.swift */; };
+		18BB7D8526BD1E1200B63607 /* ListOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D8426BD1E1200B63607 /* ListOfWords.swift */; };
+		18BB7D8726BD215A00B63607 /* AddWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D8626BD215A00B63607 /* AddWord.swift */; };
+		18BB7D8C26BD2DC200B63607 /* WriteDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D8B26BD2DC200B63607 /* WriteDiary.swift */; };
+		18BB7D8F26BD3C6A00B63607 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D8E26BD3C6A00B63607 /* ImagePicker.swift */; };
+		18BB7D9126BD3FB300B63607 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB7D9026BD3FB300B63607 /* TextArea.swift */; };
+		18BE474926DC915F004792B5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE474826DC915F004792B5 /* Post.swift */; };
+		18BE474C26DC9299004792B5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 18BE474B26DC9299004792B5 /* Kingfisher */; };
+		18BE474E26DC97E4004792B5 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE474D26DC97E4004792B5 /* AuthViewModel.swift */; };
+		18BE475026DC9844004792B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE474F26DC9844004792B5 /* User.swift */; };
+		18BE475226DC9BDD004792B5 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE475126DC9BDD004792B5 /* WordViewModel.swift */; };
+		18BEB01F26E1844A000C5CFD /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BEB01E26E1844A000C5CFD /* List.swift */; };
+		18CE29E526C2B7D100424A0E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 18CE29E426C2B7D100424A0E /* FSCalendar */; };
+		18CE29E726C2B7DF00424A0E /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29E626C2B7DF00424A0E /* CalenderView.swift */; };
+		18CE29E926C2B80300424A0E /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29E826C2B80300424A0E /* Calender.swift */; };
+		18CE29EC26C2D22000424A0E /* DetailOfDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29EB26C2D22000424A0E /* DetailOfDiary.swift */; };
+		18CE29EE26C2D3EE00424A0E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29ED26C2D3EE00424A0E /* Constants.swift */; };
+		18EEDF3426E5178100B17ED8 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEDF3326E5178100B17ED8 /* ImagesViewModel.swift */; };
+		18EEDF3726E517C000B17ED8 /* WriteDiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEDF3626E517C000B17ED8 /* WriteDiaryViewModel.swift */; };
+		18F8A57126C2A8EB0013D42D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8A57026C2A8EB0013D42D /* Images.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18BB7D6226BD167600B63607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BB7D4826BD167500B63607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB7D4F26BD167500B63607;
+			remoteInfo = Ryugaku;
+		};
+		18BB7D6D26BD167600B63607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18BB7D4826BD167500B63607 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BB7D4F26BD167500B63607;
+			remoteInfo = Ryugaku;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1810542726D58698004A77F1 /* VocabularyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyChartView.swift; sourceTree = "<group>"; };
+		1810542926D589EA004A77F1 /* WhatDidYouDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatDidYouDoView.swift; sourceTree = "<group>"; };
+		18115AFF26C70D14008899FA /* CalenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewModel.swift; sourceTree = "<group>"; };
+		18115B0226C7473C008899FA /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		186E1A8A26E3FAA2003E041D /* WordCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardViewModel.swift; sourceTree = "<group>"; };
+		1879954E26C156A500689B29 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		187F345D26DFD6B6009D57FD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		188061AB26DD66AE008BA7AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		188797AC26D558DC00651870 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		189E851626C3EF3F002FFB62 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		189E851826C40842002FFB62 /* AskDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDeleteView.swift; sourceTree = "<group>"; };
+		18BB7D5026BD167500B63607 /* Ryugaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryugaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB7D5326BD167500B63607 /* RyugakuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyugakuApp.swift; sourceTree = "<group>"; };
+		18BB7D5526BD167500B63607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18BB7D5726BD167600B63607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18BB7D5A26BD167600B63607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18BB7D5C26BD167600B63607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BB7D6126BD167600B63607 /* RyugakuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyugakuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB7D6526BD167600B63607 /* RyugakuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyugakuTests.swift; sourceTree = "<group>"; };
+		18BB7D6726BD167600B63607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BB7D6C26BD167600B63607 /* RyugakuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyugakuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BB7D7026BD167600B63607 /* RyugakuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyugakuUITests.swift; sourceTree = "<group>"; };
+		18BB7D7226BD167600B63607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BB7D7F26BD16D200B63607 /* WordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCard.swift; sourceTree = "<group>"; };
+		18BB7D8226BD16F700B63607 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		18BB7D8426BD1E1200B63607 /* ListOfWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfWords.swift; sourceTree = "<group>"; };
+		18BB7D8626BD215A00B63607 /* AddWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWord.swift; sourceTree = "<group>"; };
+		18BB7D8B26BD2DC200B63607 /* WriteDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiary.swift; sourceTree = "<group>"; };
+		18BB7D8E26BD3C6A00B63607 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		18BB7D9026BD3FB300B63607 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		18BE474826DC915F004792B5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		18BE474D26DC97E4004792B5 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		18BE474F26DC9844004792B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		18BE475126DC9BDD004792B5 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
+		18BEB01E26E1844A000C5CFD /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		18CE29E626C2B7DF00424A0E /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
+		18CE29E826C2B80300424A0E /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
+		18CE29EB26C2D22000424A0E /* DetailOfDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfDiary.swift; sourceTree = "<group>"; };
+		18CE29ED26C2D3EE00424A0E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18EEDF3326E5178100B17ED8 /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
+		18EEDF3626E517C000B17ED8 /* WriteDiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewModel.swift; sourceTree = "<group>"; };
+		18F8A57026C2A8EB0013D42D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18BB7D4D26BD167500B63607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CE29E526C2B7D100424A0E /* FSCalendar in Frameworks */,
+				188797B026D55EAC00651870 /* iLineChart in Frameworks */,
+				18BE474C26DC9299004792B5 /* Kingfisher in Frameworks */,
+				188061A426DD6572008BA7AC /* FirebaseAnalytics in Frameworks */,
+				1836910D26CC1CF900D99FF7 /* SwiftUICharts in Frameworks */,
+				188061AA26DD6572008BA7AC /* FirebaseFirestore in Frameworks */,
+				188061A826DD6572008BA7AC /* FirebaseAuth in Frameworks */,
+				188061A626DD6572008BA7AC /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB7D5E26BD167600B63607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB7D6926BD167600B63607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18115B0126C74359008899FA /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				18115B0226C7473C008899FA /* StatsView.swift */,
+				188797AC26D558DC00651870 /* PieChart.swift */,
+				1810542726D58698004A77F1 /* VocabularyChartView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		1879954C26C1567500689B29 /* Custom TabView */ = {
+			isa = PBXGroup;
+			children = (
+				1879954E26C156A500689B29 /* CustomTabView.swift */,
+			);
+			path = "Custom TabView";
+			sourceTree = "<group>";
+		};
+		187F345C26DFD6A3009D57FD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				187F345D26DFD6B6009D57FD /* SignIn.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		18BB7D4726BD167500B63607 = {
+			isa = PBXGroup;
+			children = (
+				18BB7D5226BD167500B63607 /* Ryugaku */,
+				18BB7D6426BD167600B63607 /* RyugakuTests */,
+				18BB7D6F26BD167600B63607 /* RyugakuUITests */,
+				18BB7D5126BD167500B63607 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18BB7D5126BD167500B63607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D5026BD167500B63607 /* Ryugaku.app */,
+				18BB7D6126BD167600B63607 /* RyugakuTests.xctest */,
+				18BB7D6C26BD167600B63607 /* RyugakuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BB7D5226BD167500B63607 /* Ryugaku */ = {
+			isa = PBXGroup;
+			children = (
+				187F345C26DFD6A3009D57FD /* Authentication */,
+				18115B0126C74359008899FA /* Stats */,
+				18F8A57526C2B1130013D42D /* Calender */,
+				18F8A56F26C2A8C20013D42D /* DiaryImage */,
+				1879954C26C1567500689B29 /* Custom TabView */,
+				18BB7D8D26BD3C5700B63607 /* Util */,
+				18BB7D8A26BD2DAF00B63607 /* Diary */,
+				18BB7D7E26BD16AC00B63607 /* Vocabrary */,
+				18BB7D8126BD16EC00B63607 /* Model */,
+				18BB7D5326BD167500B63607 /* RyugakuApp.swift */,
+				18BE474D26DC97E4004792B5 /* AuthViewModel.swift */,
+				18BB7D5526BD167500B63607 /* ContentView.swift */,
+				18BB7D5726BD167600B63607 /* Assets.xcassets */,
+				18BB7D5C26BD167600B63607 /* Info.plist */,
+				188061AB26DD66AE008BA7AC /* GoogleService-Info.plist */,
+				18BB7D5926BD167600B63607 /* Preview Content */,
+			);
+			path = Ryugaku;
+			sourceTree = "<group>";
+		};
+		18BB7D5926BD167600B63607 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D5A26BD167600B63607 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18BB7D6426BD167600B63607 /* RyugakuTests */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D6526BD167600B63607 /* RyugakuTests.swift */,
+				18BB7D6726BD167600B63607 /* Info.plist */,
+			);
+			path = RyugakuTests;
+			sourceTree = "<group>";
+		};
+		18BB7D6F26BD167600B63607 /* RyugakuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D7026BD167600B63607 /* RyugakuUITests.swift */,
+				18BB7D7226BD167600B63607 /* Info.plist */,
+			);
+			path = RyugakuUITests;
+			sourceTree = "<group>";
+		};
+		18BB7D7E26BD16AC00B63607 /* Vocabrary */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D7F26BD16D200B63607 /* WordCard.swift */,
+				186E1A8A26E3FAA2003E041D /* WordCardViewModel.swift */,
+				18BB7D8426BD1E1200B63607 /* ListOfWords.swift */,
+				18BEB01E26E1844A000C5CFD /* List.swift */,
+				18BB7D8626BD215A00B63607 /* AddWord.swift */,
+				18BE475126DC9BDD004792B5 /* WordViewModel.swift */,
+			);
+			path = Vocabrary;
+			sourceTree = "<group>";
+		};
+		18BB7D8126BD16EC00B63607 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D8226BD16F700B63607 /* Word.swift */,
+				18BE474826DC915F004792B5 /* Post.swift */,
+				18BE474F26DC9844004792B5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18BB7D8A26BD2DAF00B63607 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D8B26BD2DC200B63607 /* WriteDiary.swift */,
+				189E851626C3EF3F002FFB62 /* CustomTextField.swift */,
+				1810542926D589EA004A77F1 /* WhatDidYouDoView.swift */,
+				18EEDF3626E517C000B17ED8 /* WriteDiaryViewModel.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		18BB7D8D26BD3C5700B63607 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				18BB7D8E26BD3C6A00B63607 /* ImagePicker.swift */,
+				18BB7D9026BD3FB300B63607 /* TextArea.swift */,
+				18CE29ED26C2D3EE00424A0E /* Constants.swift */,
+				189E851826C40842002FFB62 /* AskDeleteView.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		18F8A56F26C2A8C20013D42D /* DiaryImage */ = {
+			isa = PBXGroup;
+			children = (
+				18F8A57026C2A8EB0013D42D /* Images.swift */,
+				18EEDF3326E5178100B17ED8 /* ImagesViewModel.swift */,
+				18CE29EB26C2D22000424A0E /* DetailOfDiary.swift */,
+			);
+			path = DiaryImage;
+			sourceTree = "<group>";
+		};
+		18F8A57526C2B1130013D42D /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				18CE29E626C2B7DF00424A0E /* CalenderView.swift */,
+				18CE29E826C2B80300424A0E /* Calender.swift */,
+				18115AFF26C70D14008899FA /* CalenderViewModel.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18BB7D4F26BD167500B63607 /* Ryugaku */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BB7D7526BD167600B63607 /* Build configuration list for PBXNativeTarget "Ryugaku" */;
+			buildPhases = (
+				18BB7D4C26BD167500B63607 /* Sources */,
+				18BB7D4D26BD167500B63607 /* Frameworks */,
+				18BB7D4E26BD167500B63607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ryugaku;
+			packageProductDependencies = (
+				18CE29E426C2B7D100424A0E /* FSCalendar */,
+				1836910C26CC1CF900D99FF7 /* SwiftUICharts */,
+				188797AF26D55EAC00651870 /* iLineChart */,
+				18BE474B26DC9299004792B5 /* Kingfisher */,
+				188061A326DD6572008BA7AC /* FirebaseAnalytics */,
+				188061A526DD6572008BA7AC /* FirebaseStorage */,
+				188061A726DD6572008BA7AC /* FirebaseAuth */,
+				188061A926DD6572008BA7AC /* FirebaseFirestore */,
+			);
+			productName = Ryugaku;
+			productReference = 18BB7D5026BD167500B63607 /* Ryugaku.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18BB7D6026BD167600B63607 /* RyugakuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BB7D7826BD167600B63607 /* Build configuration list for PBXNativeTarget "RyugakuTests" */;
+			buildPhases = (
+				18BB7D5D26BD167600B63607 /* Sources */,
+				18BB7D5E26BD167600B63607 /* Frameworks */,
+				18BB7D5F26BD167600B63607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BB7D6326BD167600B63607 /* PBXTargetDependency */,
+			);
+			name = RyugakuTests;
+			productName = RyugakuTests;
+			productReference = 18BB7D6126BD167600B63607 /* RyugakuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18BB7D6B26BD167600B63607 /* RyugakuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BB7D7B26BD167600B63607 /* Build configuration list for PBXNativeTarget "RyugakuUITests" */;
+			buildPhases = (
+				18BB7D6826BD167600B63607 /* Sources */,
+				18BB7D6926BD167600B63607 /* Frameworks */,
+				18BB7D6A26BD167600B63607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18BB7D6E26BD167600B63607 /* PBXTargetDependency */,
+			);
+			name = RyugakuUITests;
+			productName = RyugakuUITests;
+			productReference = 18BB7D6C26BD167600B63607 /* RyugakuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BB7D4826BD167500B63607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					18BB7D4F26BD167500B63607 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					18BB7D6026BD167600B63607 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 18BB7D4F26BD167500B63607;
+					};
+					18BB7D6B26BD167600B63607 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 18BB7D4F26BD167500B63607;
+					};
+				};
+			};
+			buildConfigurationList = 18BB7D4B26BD167500B63607 /* Build configuration list for PBXProject "Ryugaku" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18BB7D4726BD167500B63607;
+			packageReferences = (
+				18CE29E326C2B7D100424A0E /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				1836910B26CC1CF900D99FF7 /* XCRemoteSwiftPackageReference "ChartView" */,
+				188797AE26D55EAC00651870 /* XCRemoteSwiftPackageReference "iLineChart" */,
+				18BE474A26DC9299004792B5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				188061A226DD6572008BA7AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 18BB7D5126BD167500B63607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BB7D4F26BD167500B63607 /* Ryugaku */,
+				18BB7D6026BD167600B63607 /* RyugakuTests */,
+				18BB7D6B26BD167600B63607 /* RyugakuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18BB7D4E26BD167500B63607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB7D5B26BD167600B63607 /* Preview Assets.xcassets in Resources */,
+				18BB7D5826BD167600B63607 /* Assets.xcassets in Resources */,
+				188061AC26DD66AE008BA7AC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB7D5F26BD167600B63607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB7D6A26BD167600B63607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18BB7D4C26BD167500B63607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BE475226DC9BDD004792B5 /* WordViewModel.swift in Sources */,
+				18BB7D8026BD16D200B63607 /* WordCard.swift in Sources */,
+				18BB7D8726BD215A00B63607 /* AddWord.swift in Sources */,
+				18EEDF3726E517C000B17ED8 /* WriteDiaryViewModel.swift in Sources */,
+				18115B0026C70D14008899FA /* CalenderViewModel.swift in Sources */,
+				18BE475026DC9844004792B5 /* User.swift in Sources */,
+				1810542826D58698004A77F1 /* VocabularyChartView.swift in Sources */,
+				18CE29E726C2B7DF00424A0E /* CalenderView.swift in Sources */,
+				18BB7D8526BD1E1200B63607 /* ListOfWords.swift in Sources */,
+				189E851726C3EF3F002FFB62 /* CustomTextField.swift in Sources */,
+				18BEB01F26E1844A000C5CFD /* List.swift in Sources */,
+				18F8A57126C2A8EB0013D42D /* Images.swift in Sources */,
+				18CE29EE26C2D3EE00424A0E /* Constants.swift in Sources */,
+				18CE29EC26C2D22000424A0E /* DetailOfDiary.swift in Sources */,
+				188797AD26D558DC00651870 /* PieChart.swift in Sources */,
+				18BB7D8C26BD2DC200B63607 /* WriteDiary.swift in Sources */,
+				18BE474926DC915F004792B5 /* Post.swift in Sources */,
+				18BB7D8326BD16F700B63607 /* Word.swift in Sources */,
+				18BB7D8F26BD3C6A00B63607 /* ImagePicker.swift in Sources */,
+				18EEDF3426E5178100B17ED8 /* ImagesViewModel.swift in Sources */,
+				18BB7D5626BD167500B63607 /* ContentView.swift in Sources */,
+				1879954F26C156A500689B29 /* CustomTabView.swift in Sources */,
+				187F345E26DFD6B6009D57FD /* SignIn.swift in Sources */,
+				186E1A8B26E3FAA2003E041D /* WordCardViewModel.swift in Sources */,
+				18115B0326C7473C008899FA /* StatsView.swift in Sources */,
+				189E851926C40842002FFB62 /* AskDeleteView.swift in Sources */,
+				18CE29E926C2B80300424A0E /* Calender.swift in Sources */,
+				18BE474E26DC97E4004792B5 /* AuthViewModel.swift in Sources */,
+				1810542A26D589EA004A77F1 /* WhatDidYouDoView.swift in Sources */,
+				18BB7D9126BD3FB300B63607 /* TextArea.swift in Sources */,
+				18BB7D5426BD167500B63607 /* RyugakuApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB7D5D26BD167600B63607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB7D6626BD167600B63607 /* RyugakuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BB7D6826BD167600B63607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BB7D7126BD167600B63607 /* RyugakuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18BB7D6326BD167600B63607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BB7D4F26BD167500B63607 /* Ryugaku */;
+			targetProxy = 18BB7D6226BD167600B63607 /* PBXContainerItemProxy */;
+		};
+		18BB7D6E26BD167600B63607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BB7D4F26BD167500B63607 /* Ryugaku */;
+			targetProxy = 18BB7D6D26BD167600B63607 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18BB7D7326BD167600B63607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18BB7D7426BD167600B63607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18BB7D7626BD167600B63607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ryugaku/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PM794MB43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ryugaku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nagato.Ryugaku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18BB7D7726BD167600B63607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ryugaku/Preview Content\"";
+				DEVELOPMENT_TEAM = 2PM794MB43;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ryugaku/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nagato.Ryugaku;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18BB7D7926BD167600B63607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PM794MB43;
+				INFOPLIST_FILE = RyugakuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nagato.RyugakuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryugaku.app/Ryugaku";
+			};
+			name = Debug;
+		};
+		18BB7D7A26BD167600B63607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PM794MB43;
+				INFOPLIST_FILE = RyugakuTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nagato.RyugakuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryugaku.app/Ryugaku";
+			};
+			name = Release;
+		};
+		18BB7D7C26BD167600B63607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PM794MB43;
+				INFOPLIST_FILE = RyugakuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nagato.RyugakuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ryugaku;
+			};
+			name = Debug;
+		};
+		18BB7D7D26BD167600B63607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2PM794MB43;
+				INFOPLIST_FILE = RyugakuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nagato.RyugakuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ryugaku;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18BB7D4B26BD167500B63607 /* Build configuration list for PBXProject "Ryugaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB7D7326BD167600B63607 /* Debug */,
+				18BB7D7426BD167600B63607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BB7D7526BD167600B63607 /* Build configuration list for PBXNativeTarget "Ryugaku" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB7D7626BD167600B63607 /* Debug */,
+				18BB7D7726BD167600B63607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BB7D7826BD167600B63607 /* Build configuration list for PBXNativeTarget "RyugakuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB7D7926BD167600B63607 /* Debug */,
+				18BB7D7A26BD167600B63607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BB7D7B26BD167600B63607 /* Build configuration list for PBXNativeTarget "RyugakuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BB7D7C26BD167600B63607 /* Debug */,
+				18BB7D7D26BD167600B63607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1836910B26CC1CF900D99FF7 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+		188061A226DD6572008BA7AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+		188797AE26D55EAC00651870 /* XCRemoteSwiftPackageReference "iLineChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlexFine/iLineChart.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.4;
+			};
+		};
+		18BE474A26DC9299004792B5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+		18CE29E326C2B7D100424A0E /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1836910C26CC1CF900D99FF7 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1836910B26CC1CF900D99FF7 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		188061A326DD6572008BA7AC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188061A226DD6572008BA7AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		188061A526DD6572008BA7AC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188061A226DD6572008BA7AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		188061A726DD6572008BA7AC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188061A226DD6572008BA7AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		188061A926DD6572008BA7AC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188061A226DD6572008BA7AC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		188797AF26D55EAC00651870 /* iLineChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188797AE26D55EAC00651870 /* XCRemoteSwiftPackageReference "iLineChart" */;
+			productName = iLineChart;
+		};
+		18BE474B26DC9299004792B5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18BE474A26DC9299004792B5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		18CE29E426C2B7D100424A0E /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18CE29E326C2B7D100424A0E /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 18BB7D4826BD167500B63607 /* Project object */;
+}
