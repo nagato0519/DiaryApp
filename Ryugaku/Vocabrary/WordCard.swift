@@ -8,10 +8,6 @@
 import SwiftUI
 
 
-
-//let word = Word(dictionary: ["English" : "English", "Japanese": "英語", "dayOfRyugaku": 3])
-
-
 struct WordCard: View {
     
     @ObservedObject var viewModel: WordCardViewMoel
