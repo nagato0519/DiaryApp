@@ -9,9 +9,13 @@ import SwiftUI
 
 struct AskDeleteView: View {
     
+    @ObservedObject var viewModel = WriteDiaryViewModel()
+    
     @Environment(\.colorScheme) var colorScheme
     
     @Binding var showDelete: Bool
+    
+    var postID: String
     
     var body: some View {
         ZStack {
@@ -32,7 +36,7 @@ struct AskDeleteView: View {
                     .font(.subheadline)
                 
                 HStack(spacing: 0){
-                    Button(action: {}, label: {
+                    Button(action: {self.viewModel.deletePost(id: postID); self.showDelete = false}, label: {
                         HStack {
                             Spacer()
                             Text("Delete")

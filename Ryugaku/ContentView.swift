@@ -31,10 +31,6 @@ struct ContentView: View {
                 if self.index == 0{
                     Images()
                 }else if self.index == 1{
-                    CalenderView()
-                }else if self.index == 2{
-                    StatsView()
-                }else if self.index == 3{
                     ListOfWords(viewModel: self.viewModelWords)
                         .foregroundColor(colorScheme == .dark ? .white: .black)
                 }

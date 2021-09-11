@@ -34,7 +34,7 @@ class Post: Identifiable{
     
     var dateString: String{
         let format = DateFormatter()
-        format.dateFormat = "M/d/yyyy"
+        format.dateFormat = "m/d/yyyy"
         return format.string(from: timeStamp.dateValue())
     }
 }

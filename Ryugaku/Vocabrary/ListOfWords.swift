@@ -21,59 +21,70 @@ struct ListOfWords: View {
             
             VStack(spacing: 0) {
                 
-                HStack(alignment: .center, spacing: 60){
-                    
+                HStack(alignment: .center,spacing: 60){
+
                     VStack {
-                        Button(action:{self.selected = 0; barDistace = 42}){
-                            
+
+                        Button(action:{self.selected = 0;}){
+
+
                             if selected == 0{
                                 Text("Timeline")
                                     .foregroundColor(.green)
                             }else{
                                 Text("Timeline")
                             }
-      
                         }
+                        
+                        Rectangle()
+                            .frame(width: 80, height: 2)
+                            .foregroundColor(selected == 0 ? .green : .white)
+                            .animation(.easeIn)
+
                     }
-                    
+
+
+
+                    VStack {
+                        Button(action:{self.selected = 1 }){
+
+                            if selected == 1{
+                                Text("Favorites")
+                                    .foregroundColor(.green)
+                            }else{
+                                Text("Favorites")
+                            }
+
+                        }
+                        
+                        
+                        Rectangle()
+                            .frame(width: 80, height: 2)
+                            .foregroundColor(selected == 1 ? .green : .white)
+                            .animation(.easeIn)
+                    }
 
                     
-                    Button(action:{self.viewModel.fetchLikedWordsList();self.selected = 1 ;barDistace = 165}){
-                        
-                        if selected == 1{
-                            Text("Favorites")
-                                .foregroundColor(.green)
-                        }else{
-                            Text("Favorites")
+                    VStack {
+                        Button(action:{self.selected = 2;barDistace = 295}){
+
+                            if selected == 2{
+                                Text("Random")
+                                    .foregroundColor(.green)
+                            }else{
+                                Text("Random")
+                            }
                         }
-           
-                    }
-  
-                    
-                    Button(action:{self.selected = 2;barDistace = 295}){
                         
-                        if selected == 2{
-                            Text("Random")
-                                .foregroundColor(.green)
-                        }else{
-                            Text("Random")
-                        }
-                  
-                        
+                        Rectangle()
+                            .frame(width: 80, height: 2)
+                            .foregroundColor(selected == 2 ? .green : .white)
+                            .animation(.easeIn)
                     }
                 }.frame(height: 40)
                 .padding(.bottom, 2)
                 .padding(.horizontal)
-                
-                HStack{
-                Rectangle()
-                    .frame(width: 120, height: 2)
-                    .foregroundColor(.green)
-                    .animation(.easeIn)
-                    .padding(.leading, barDistace)
-                    
-                    Spacer()
-                }
+
                 
                 
             //Select Bar End
@@ -114,6 +125,7 @@ struct ListOfWords: View {
         
         .onAppear{
             self.viewModel.fetchWords()
+            self.viewModel.fetchLikedWordsList()
         }
     }
 }

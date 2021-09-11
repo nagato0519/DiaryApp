@@ -48,5 +48,10 @@ class WordCardViewMoel: ObservableObject{
         }
     }
     
+    func editWord(English: String, Japanese: String){
+        guard let user = AuthViewModel.shared.user else {return}
+        Firestore.firestore().collection("users").document(user.uid).collection("Words").document(word.id).updateData(["English": English, "Japanese": Japanese])
+    }
+    
 
 }

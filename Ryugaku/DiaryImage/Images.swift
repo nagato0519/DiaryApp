@@ -24,7 +24,7 @@ struct Images: View {
             ScrollView {
                 
                 ZStack {
-                    LazyVGrid(columns: items, spacing: 1, content: {
+                    LazyVGrid(columns: items, spacing: 2, content: {
                         ForEach(self.viewModel.posts){post in
         
                                 NavigationLink(
@@ -36,9 +36,7 @@ struct Images: View {
                                             .scaledToFill()
                                             .frame(width: width, height: width)
                                             .clipped()
-                                          
-
-                                            
+  
                                     })
                         }
                     })
@@ -64,7 +62,6 @@ struct Images: View {
 
         .onAppear{
             self.viewModel.fetchPosts()
-            
         }
 
     }

@@ -13,7 +13,7 @@ struct WordCard: View {
     @ObservedObject var viewModel: WordCardViewMoel
     @State var showJapanese: Bool = false
     
-    @State var word: Word = Word(dictionary: ["id": "s","English" : "English", "Japanese": "英語", "dayOfRyugaku": 3])
+    @State var word: Word = Word(dictionary: ["id": "s", "English":"English", "Japanese":"英語", "dayOfRyugaku": 3])
     
     init(showJapanese: Bool, word: Word){
         self.showJapanese = false
@@ -51,7 +51,7 @@ struct WordCard: View {
             
             HStack{
                 NavigationLink(
-                    destination: Text("Destination"),
+                    destination: DetailOfWord(word: self.word),
                     label: {
                         
                                 Image(systemName: "ellipsis")

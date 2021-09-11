@@ -50,14 +50,7 @@ class WriteDiaryViewModel: ObservableObject{
                                 return
                             }
                             
-
-                        print("DEBUG: Post is done")
-                        DispatchQueue.global().sync {
                             self.fetchPosts()
-                        }
-   
-                        
-                    
 
                     }//set data
                 }//download URL
@@ -75,4 +68,10 @@ class WriteDiaryViewModel: ObservableObject{
         }
     }
     
+    func deletePost(id : String){
+        guard let user = AuthViewModel.shared.user else {return}
+        Firestore.firestore().collection("users").document(user.uid).collection("Diary").document(id).delete()
+        
+        fetchPosts()
+    }
 }

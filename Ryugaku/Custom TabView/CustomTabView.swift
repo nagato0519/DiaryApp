@@ -87,6 +87,7 @@ struct CustomTabView: View {
                 
                 VStack {
                     HStack{
+                        
                         Button(action: {
                             self.index = 0
                         }, label: {
@@ -94,18 +95,7 @@ struct CustomTabView: View {
                                 .font(.system(size: 25))
                         })
                         .foregroundColor( colorScheme == .dark ? .white : .black).opacity(self.index == 0 ? 1 : 0.2)
-                        
-                        Spacer(minLength: 0)
-                        
-                        Button(action: {
-                            self.index = 1
-                        }, label: {
-                            Image(systemName: "calendar")
-                                .font(.system(size: 25))
-                        })
-                        .foregroundColor( colorScheme == .dark ? .white : .black).opacity(self.index == 01 ? 1 : 0.2)
-                        .offset(x: 9.0)
-                        
+  
                         
                         Spacer(minLength: 0)
                         
@@ -126,25 +116,15 @@ struct CustomTabView: View {
                         Spacer(minLength: 0)
                         
                         Button(action: {
-                            self.index = 2
+                            self.index = 1
                         }, label: {
-                            Image(systemName: "waveform.path.ecg")
-                                .font(.system(size: 25))
-                        })
-                        .foregroundColor( colorScheme == .dark ? .white : .black).opacity(self.index == 2 ? 1 : 0.2)
-                        .offset(x: -9.0)
-                        
-                        
-                        Spacer(minLength: 0)
-                        
-                        Button(action: {
-                            self.index = 3
-                        }, label: {
+                            
+                            
                             Image(systemName: "doc.text")
                                 .font(.system(size: 25))
                         })
-                        .foregroundColor( colorScheme == .dark ? .white : .black).opacity(self.index == 3 ? 1 : 0.2)
-                    }.padding(.horizontal, 35)
+                        .foregroundColor( colorScheme == .dark ? .white : .black).opacity(self.index == 1 ? 1 : 0.2)
+                    }.padding(.horizontal, 70)
                     
                     Spacer().frame(height: 40)
      

@@ -43,16 +43,7 @@ struct DetailOfDiary: View {
                                 .font(.system(size: 20))
                         }.padding(.trailing, 10)
                         
-                        Button(action:{self.liked.toggle()}){
-                            if !liked{
-                                Image(systemName: "heart")
-                                    .font(.system(size: 20))
-                            }else{
-                                Image(systemName: "heart.fill")
-                                    .foregroundColor(.pink)
-                                    .font(.system(size: 20))
-                            }
-                        }.padding(.trailing, 10)
+
                         
                         
                     }.padding(.horizontal)
@@ -74,7 +65,7 @@ struct DetailOfDiary: View {
             
             if AskDelete{
 
-                AskDeleteView(showDelete: $AskDelete)
+                AskDeleteView(showDelete: $AskDelete, postID: post.id)
             }
         }.ignoresSafeArea()
     

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1810542826D58698004A77F1 /* VocabularyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810542726D58698004A77F1 /* VocabularyChartView.swift */; };
 		1810542A26D589EA004A77F1 /* WhatDidYouDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810542926D589EA004A77F1 /* WhatDidYouDoView.swift */; };
-		18115B0026C70D14008899FA /* CalenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18115AFF26C70D14008899FA /* CalenderViewModel.swift */; };
-		18115B0326C7473C008899FA /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18115B0226C7473C008899FA /* StatsView.swift */; };
+		1810932426EB2F1700121E83 /* DetailOfWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1810932326EB2F1700121E83 /* DetailOfWord.swift */; };
 		1836910D26CC1CF900D99FF7 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1836910C26CC1CF900D99FF7 /* SwiftUICharts */; };
 		186E1A8B26E3FAA2003E041D /* WordCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186E1A8A26E3FAA2003E041D /* WordCardViewModel.swift */; };
 		1879954F26C156A500689B29 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1879954E26C156A500689B29 /* CustomTabView.swift */; };
@@ -20,7 +18,6 @@
 		188061A826DD6572008BA7AC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 188061A726DD6572008BA7AC /* FirebaseAuth */; };
 		188061AA26DD6572008BA7AC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 188061A926DD6572008BA7AC /* FirebaseFirestore */; };
 		188061AC26DD66AE008BA7AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188061AB26DD66AE008BA7AC /* GoogleService-Info.plist */; };
-		188797AD26D558DC00651870 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188797AC26D558DC00651870 /* PieChart.swift */; };
 		188797B026D55EAC00651870 /* iLineChart in Frameworks */ = {isa = PBXBuildFile; productRef = 188797AF26D55EAC00651870 /* iLineChart */; };
 		189E851726C3EF3F002FFB62 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E851626C3EF3F002FFB62 /* CustomTextField.swift */; };
 		189E851926C40842002FFB62 /* AskDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189E851826C40842002FFB62 /* AskDeleteView.swift */; };
@@ -44,11 +41,8 @@
 		18BE475226DC9BDD004792B5 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE475126DC9BDD004792B5 /* WordViewModel.swift */; };
 		18BEB01F26E1844A000C5CFD /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BEB01E26E1844A000C5CFD /* List.swift */; };
 		18CE29E526C2B7D100424A0E /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 18CE29E426C2B7D100424A0E /* FSCalendar */; };
-		18CE29E726C2B7DF00424A0E /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29E626C2B7DF00424A0E /* CalenderView.swift */; };
-		18CE29E926C2B80300424A0E /* Calender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29E826C2B80300424A0E /* Calender.swift */; };
 		18CE29EC26C2D22000424A0E /* DetailOfDiary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29EB26C2D22000424A0E /* DetailOfDiary.swift */; };
 		18CE29EE26C2D3EE00424A0E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE29ED26C2D3EE00424A0E /* Constants.swift */; };
-		18EEDF3426E5178100B17ED8 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEDF3326E5178100B17ED8 /* ImagesViewModel.swift */; };
 		18EEDF3726E517C000B17ED8 /* WriteDiaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEDF3626E517C000B17ED8 /* WriteDiaryViewModel.swift */; };
 		18F8A57126C2A8EB0013D42D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F8A57026C2A8EB0013D42D /* Images.swift */; };
 /* End PBXBuildFile section */
@@ -71,15 +65,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1810542726D58698004A77F1 /* VocabularyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyChartView.swift; sourceTree = "<group>"; };
 		1810542926D589EA004A77F1 /* WhatDidYouDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatDidYouDoView.swift; sourceTree = "<group>"; };
-		18115AFF26C70D14008899FA /* CalenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewModel.swift; sourceTree = "<group>"; };
-		18115B0226C7473C008899FA /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		1810932326EB2F1700121E83 /* DetailOfWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfWord.swift; sourceTree = "<group>"; };
 		186E1A8A26E3FAA2003E041D /* WordCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardViewModel.swift; sourceTree = "<group>"; };
 		1879954E26C156A500689B29 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		187F345D26DFD6B6009D57FD /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		188061AB26DD66AE008BA7AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		188797AC26D558DC00651870 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
 		189E851626C3EF3F002FFB62 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		189E851826C40842002FFB62 /* AskDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDeleteView.swift; sourceTree = "<group>"; };
 		18BB7D5026BD167500B63607 /* Ryugaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryugaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,11 +97,8 @@
 		18BE474F26DC9844004792B5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		18BE475126DC9BDD004792B5 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
 		18BEB01E26E1844A000C5CFD /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		18CE29E626C2B7DF00424A0E /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
-		18CE29E826C2B80300424A0E /* Calender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calender.swift; sourceTree = "<group>"; };
 		18CE29EB26C2D22000424A0E /* DetailOfDiary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOfDiary.swift; sourceTree = "<group>"; };
 		18CE29ED26C2D3EE00424A0E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		18EEDF3326E5178100B17ED8 /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
 		18EEDF3626E517C000B17ED8 /* WriteDiaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewModel.swift; sourceTree = "<group>"; };
 		18F8A57026C2A8EB0013D42D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,16 +136,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18115B0126C74359008899FA /* Stats */ = {
-			isa = PBXGroup;
-			children = (
-				18115B0226C7473C008899FA /* StatsView.swift */,
-				188797AC26D558DC00651870 /* PieChart.swift */,
-				1810542726D58698004A77F1 /* VocabularyChartView.swift */,
-			);
-			path = Stats;
-			sourceTree = "<group>";
-		};
 		1879954C26C1567500689B29 /* Custom TabView */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,8 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				187F345C26DFD6A3009D57FD /* Authentication */,
-				18115B0126C74359008899FA /* Stats */,
-				18F8A57526C2B1130013D42D /* Calender */,
 				18F8A56F26C2A8C20013D42D /* DiaryImage */,
 				1879954C26C1567500689B29 /* Custom TabView */,
 				18BB7D8D26BD3C5700B63607 /* Util */,
@@ -247,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				18BB7D7F26BD16D200B63607 /* WordCard.swift */,
+				1810932326EB2F1700121E83 /* DetailOfWord.swift */,
 				186E1A8A26E3FAA2003E041D /* WordCardViewModel.swift */,
 				18BB7D8426BD1E1200B63607 /* ListOfWords.swift */,
 				18BEB01E26E1844A000C5CFD /* List.swift */,
@@ -292,20 +269,9 @@
 			isa = PBXGroup;
 			children = (
 				18F8A57026C2A8EB0013D42D /* Images.swift */,
-				18EEDF3326E5178100B17ED8 /* ImagesViewModel.swift */,
 				18CE29EB26C2D22000424A0E /* DetailOfDiary.swift */,
 			);
 			path = DiaryImage;
-			sourceTree = "<group>";
-		};
-		18F8A57526C2B1130013D42D /* Calender */ = {
-			isa = PBXGroup;
-			children = (
-				18CE29E626C2B7DF00424A0E /* CalenderView.swift */,
-				18CE29E826C2B80300424A0E /* Calender.swift */,
-				18115AFF26C70D14008899FA /* CalenderViewModel.swift */,
-			);
-			path = Calender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,29 +425,23 @@
 				18BB7D8026BD16D200B63607 /* WordCard.swift in Sources */,
 				18BB7D8726BD215A00B63607 /* AddWord.swift in Sources */,
 				18EEDF3726E517C000B17ED8 /* WriteDiaryViewModel.swift in Sources */,
-				18115B0026C70D14008899FA /* CalenderViewModel.swift in Sources */,
 				18BE475026DC9844004792B5 /* User.swift in Sources */,
-				1810542826D58698004A77F1 /* VocabularyChartView.swift in Sources */,
-				18CE29E726C2B7DF00424A0E /* CalenderView.swift in Sources */,
 				18BB7D8526BD1E1200B63607 /* ListOfWords.swift in Sources */,
 				189E851726C3EF3F002FFB62 /* CustomTextField.swift in Sources */,
 				18BEB01F26E1844A000C5CFD /* List.swift in Sources */,
 				18F8A57126C2A8EB0013D42D /* Images.swift in Sources */,
 				18CE29EE26C2D3EE00424A0E /* Constants.swift in Sources */,
 				18CE29EC26C2D22000424A0E /* DetailOfDiary.swift in Sources */,
-				188797AD26D558DC00651870 /* PieChart.swift in Sources */,
 				18BB7D8C26BD2DC200B63607 /* WriteDiary.swift in Sources */,
 				18BE474926DC915F004792B5 /* Post.swift in Sources */,
+				1810932426EB2F1700121E83 /* DetailOfWord.swift in Sources */,
 				18BB7D8326BD16F700B63607 /* Word.swift in Sources */,
 				18BB7D8F26BD3C6A00B63607 /* ImagePicker.swift in Sources */,
-				18EEDF3426E5178100B17ED8 /* ImagesViewModel.swift in Sources */,
 				18BB7D5626BD167500B63607 /* ContentView.swift in Sources */,
 				1879954F26C156A500689B29 /* CustomTabView.swift in Sources */,
 				187F345E26DFD6B6009D57FD /* SignIn.swift in Sources */,
 				186E1A8B26E3FAA2003E041D /* WordCardViewModel.swift in Sources */,
-				18115B0326C7473C008899FA /* StatsView.swift in Sources */,
 				189E851926C40842002FFB62 /* AskDeleteView.swift in Sources */,
-				18CE29E926C2B80300424A0E /* Calender.swift in Sources */,
 				18BE474E26DC97E4004792B5 /* AuthViewModel.swift in Sources */,
 				1810542A26D589EA004A77F1 /* WhatDidYouDoView.swift in Sources */,
 				18BB7D9126BD3FB300B63607 /* TextArea.swift in Sources */,
