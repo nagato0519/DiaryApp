@@ -21,6 +21,3 @@ Here's a walkthrough of implemented user stories:
 
 ![Alt Text](https://media.giphy.com/media/z7D9vRbDFP9TpzxSQr/giphy.gif?cid=790b761181d8e55118ac4cf381c7f8b25713addd8e851260&rid=giphy.gif&ct=g)
 
-
-### Notes
-Describe any challenges encountered while building the app.
