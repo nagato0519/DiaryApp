@@ -13,6 +13,7 @@ Made by Nagato Kadoya
 - [ ] The data is stored with Firebase
 - [ ] User can enjoy cool animation button
 - [ ] User can delete data 
+- [ ] It can adjust to Dark mode and light mode
 
 ### App Walkthrough GIF
 Here's a walkthrough of implemented user stories:
