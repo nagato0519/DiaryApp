@@ -16,8 +16,8 @@ Made by Nagato Kadoya
 
 ### App Walkthrough GIF
 Here's a walkthrough of implemented user stories:
+![](file:///Users/nagatokadoya/Downloads/ezgif.com-gif-maker.gif)
 
-<img src="file:///Users/nagatokadoya/Downloads/ezgif.com-gif-maker.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
